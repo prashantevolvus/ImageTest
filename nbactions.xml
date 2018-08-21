@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-run apim</actionName>
+            <displayName>run apim</displayName>
+            <goals>
+                <goal>mvn</goal>
+                <goal>exec:java</goal>
+                <goal>-Dexec.mainClass="com.evolvus.openimage.ImageApache.Main"</goal>
+                <goal>-Dexec.args="photo.jpg</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-apim</actionName>
+            <displayName>apim</displayName>
+            <goals>
+                <goal>exec:java</goal>
+                <goal>-Dexec.mainClass="com.evolvus.openimage.ImageApache.Main"</goal>
+                <goal>-Dexec.args=photo.jpg</goal>
+            </goals>
+        </action>
+    </actions>
